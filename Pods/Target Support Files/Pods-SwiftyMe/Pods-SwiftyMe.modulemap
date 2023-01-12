@@ -1,0 +1,6 @@
+framework module Pods_SwiftyMe {
+  umbrella header "Pods-SwiftyMe-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Outfit-Medium.ttf">
+            <string>Outfit-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MapIconView" customModule="TripsCon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUW-Bo-HVS">
+                    <rect key="frame" x="5" y="5" width="119" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RS200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urh-lc-sVU">
+                            <rect key="frame" x="5" y="0.0" width="109" height="30"/>
+                            <fontDescription key="fontDescription" name="Outfit-Medium" family="Outfit" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Urh-lc-sVU" firstAttribute="top" secondItem="qUW-Bo-HVS" secondAttribute="top" id="U9u-tc-UI5"/>
+                        <constraint firstAttribute="bottom" secondItem="Urh-lc-sVU" secondAttribute="bottom" id="eMK-jq-o9l"/>
+                        <constraint firstAttribute="height" constant="30" id="ie8-d2-q9J"/>
+                        <constraint firstAttribute="trailing" secondItem="Urh-lc-sVU" secondAttribute="trailing" constant="5" id="uq9-kF-cnv"/>
+                        <constraint firstItem="Urh-lc-sVU" firstAttribute="leading" secondItem="qUW-Bo-HVS" secondAttribute="leading" constant="5" id="zs2-HS-qHb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.20000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="gray_details"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qUW-Bo-HVS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="5UE-vY-Wiu"/>
+                <constraint firstItem="qUW-Bo-HVS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="brD-U2-fGT"/>
+                <constraint firstAttribute="bottom" secondItem="qUW-Bo-HVS" secondAttribute="bottom" constant="5" id="mw6-hL-PSa"/>
+                <constraint firstAttribute="trailing" secondItem="qUW-Bo-HVS" secondAttribute="trailing" constant="5" id="s1A-ez-9Ff"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblTitle" destination="Urh-lc-sVU" id="Mb5-2N-nQE"/>
+                <outlet property="viewContainer" destination="qUW-Bo-HVS" id="eZI-jT-cvU"/>
+            </connections>
+            <point key="canvasLocation" x="-359.5419847328244" y="-364.78873239436621"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="gray_details">
+            <color red="0.48600000143051147" green="0.48600000143051147" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
