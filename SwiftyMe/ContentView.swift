@@ -12,6 +12,7 @@ struct ContentView: View {
     
     @StateObject var alertManager = AlertManager()
     
+    
     var body: some View {
         VStack{
             StartingListOptionsView()

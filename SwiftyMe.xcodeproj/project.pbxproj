@@ -79,9 +79,18 @@
 		FA902F51297042A60066DFBB /* TimePikerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902F50297042A60066DFBB /* TimePikerView.swift */; };
 		FA902F53297047200066DFBB /* PickersSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902F52297047200066DFBB /* PickersSample.swift */; };
 		FA902F56297057E70066DFBB /* ProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902F55297057E70066DFBB /* ProgressCircle.swift */; };
+		FAA2AE7529757BF9007B2AD9 /* AnimateSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2AE7429757BF9007B2AD9 /* AnimateSampleView.swift */; };
+		FAA2AE77297588EA007B2AD9 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA2AE76297588EA007B2AD9 /* hikeData.json */; };
+		FAA2AE7D2975891B007B2AD9 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2AE792975891A007B2AD9 /* HikeGraph.swift */; };
+		FAA2AE7E2975891B007B2AD9 /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2AE7A2975891A007B2AD9 /* GraphCapsule.swift */; };
+		FAA2AE7F2975891B007B2AD9 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2AE7B2975891A007B2AD9 /* HikeDetail.swift */; };
+		FAA2AE802975891B007B2AD9 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2AE7C2975891B007B2AD9 /* HikeView.swift */; };
+		FAA2AE822975894C007B2AD9 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2AE812975894C007B2AD9 /* Hike.swift */; };
+		FAA2AE8429759190007B2AD9 /* View+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2AE8329759190007B2AD9 /* View+Animation.swift */; };
 		FAE1286C2959D590004AA906 /* TextFieldBordered.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1286B2959D590004AA906 /* TextFieldBordered.swift */; };
 		FAE1286E2959E284004AA906 /* SecureTextFieldBordered.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1286D2959E284004AA906 /* SecureTextFieldBordered.swift */; };
 		FAE1289E2959EEEA004AA906 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE1289D2959EEEA004AA906 /* SignupView.swift */; };
+		FAF81E5E2977E14A00E58E61 /* SkeltonViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81E5D2977E14A00E58E61 /* SkeltonViewExample.swift */; };
 		FAFD14FF295ED25800CDDE30 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD14FE295ED25800CDDE30 /* TabBarView.swift */; };
 		FAFD1503295EF52500CDDE30 /* MapViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD1502295EF52500CDDE30 /* MapViewCustom.swift */; };
 /* End PBXBuildFile section */
@@ -163,9 +172,18 @@
 		FA902F50297042A60066DFBB /* TimePikerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePikerView.swift; sourceTree = "<group>"; };
 		FA902F52297047200066DFBB /* PickersSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickersSample.swift; sourceTree = "<group>"; };
 		FA902F55297057E70066DFBB /* ProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircle.swift; sourceTree = "<group>"; };
+		FAA2AE7429757BF9007B2AD9 /* AnimateSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateSampleView.swift; sourceTree = "<group>"; };
+		FAA2AE76297588EA007B2AD9 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
+		FAA2AE792975891A007B2AD9 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
+		FAA2AE7A2975891A007B2AD9 /* GraphCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
+		FAA2AE7B2975891A007B2AD9 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
+		FAA2AE7C2975891B007B2AD9 /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
+		FAA2AE812975894C007B2AD9 /* Hike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
+		FAA2AE8329759190007B2AD9 /* View+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Animation.swift"; sourceTree = "<group>"; };
 		FAE1286B2959D590004AA906 /* TextFieldBordered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBordered.swift; sourceTree = "<group>"; };
 		FAE1286D2959E284004AA906 /* SecureTextFieldBordered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextFieldBordered.swift; sourceTree = "<group>"; };
 		FAE1289D2959EEEA004AA906 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		FAF81E5D2977E14A00E58E61 /* SkeltonViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeltonViewExample.swift; sourceTree = "<group>"; };
 		FAFD14FE295ED25800CDDE30 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		FAFD1502295EF52500CDDE30 /* MapViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,6 +227,7 @@
 				FA07C9AF2955C0E4008D19FA /* Color.swift */,
 				FA07C9B32955C215008D19FA /* Font.swift */,
 				FA07C9B72955CF64008D19FA /* View.swift */,
+				FAA2AE8329759190007B2AD9 /* View+Animation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -360,6 +379,7 @@
 				FA1B268B2952E6300074D3A9 /* Components */,
 				FA586D1728AD249D00F8389F /* Views */,
 				FA3516A0289BF9F700B2F299 /* Assets.xcassets */,
+				FAA2AE76297588EA007B2AD9 /* hikeData.json */,
 				FA902F4429701EF30066DFBB /* GoogleService-Info.plist */,
 				FA586D1E28AD37BE00F8389F /* landmarkData.json */,
 				FA3516A2289BF9F700B2F299 /* Preview Content */,
@@ -406,6 +426,8 @@
 				FA586D2728AD3B8900F8389F /* LandmarkList.swift */,
 				FA586D2928AD3D1A00F8389F /* LandmarkDetail.swift */,
 				FA5FB89D295DB81B00599BA8 /* StartingListOptionsView.swift */,
+				FAF81E5C2977E12B00E58E61 /* SkeltonView */,
+				FAA2AE7329757BD5007B2AD9 /* Animations */,
 				FA902F54297051430066DFBB /* Picker Samples */,
 				FA24348D296ED67700EF82EB /* PushNotifications */,
 				FA4CBF96296C00DF00ADDC3C /* SlideMenu */,
@@ -423,6 +445,7 @@
 				FA586D2128AD37CF00F8389F /* Landmark.swift */,
 				FA586D2328AD38B300F8389F /* ModelData.swift */,
 				FA902F4B29702E140066DFBB /* Theme.swift */,
+				FAA2AE812975894C007B2AD9 /* Hike.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -450,6 +473,34 @@
 				FA902F52297047200066DFBB /* PickersSample.swift */,
 			);
 			path = "Picker Samples";
+			sourceTree = "<group>";
+		};
+		FAA2AE7329757BD5007B2AD9 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				FAA2AE7429757BF9007B2AD9 /* AnimateSampleView.swift */,
+				FAA2AE7829758908007B2AD9 /* Hike */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		FAA2AE7829758908007B2AD9 /* Hike */ = {
+			isa = PBXGroup;
+			children = (
+				FAA2AE7A2975891A007B2AD9 /* GraphCapsule.swift */,
+				FAA2AE7B2975891A007B2AD9 /* HikeDetail.swift */,
+				FAA2AE792975891A007B2AD9 /* HikeGraph.swift */,
+				FAA2AE7C2975891B007B2AD9 /* HikeView.swift */,
+			);
+			path = Hike;
+			sourceTree = "<group>";
+		};
+		FAF81E5C2977E12B00E58E61 /* SkeltonView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF81E5D2977E14A00E58E61 /* SkeltonViewExample.swift */,
+			);
+			path = SkeltonView;
 			sourceTree = "<group>";
 		};
 		FAFD1500295EF4BA00CDDE30 /* TabBar */ = {
@@ -542,6 +593,7 @@
 				FA586D1F28AD37BE00F8389F /* landmarkData.json in Resources */,
 				FA2F3FAB29646715000F1595 /* Location.storyboard in Resources */,
 				FA2F3FAC29646715000F1595 /* MapIconView.xib in Resources */,
+				FAA2AE77297588EA007B2AD9 /* hikeData.json in Resources */,
 				FA902F4529701EF30066DFBB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,6 +670,7 @@
 				FA2F3F9029643B3B000F1595 /* Data+Extension.swift in Sources */,
 				FAFD1503295EF52500CDDE30 /* MapViewCustom.swift in Sources */,
 				FA2F3F7C296438E9000F1595 /* FileDownloader.swift in Sources */,
+				FAA2AE7529757BF9007B2AD9 /* AnimateSampleView.swift in Sources */,
 				FA4CBF9F296C016300ADDC3C /* NSideMenuOptions.swift in Sources */,
 				FA24348F296ED68B00EF82EB /* AppNotificationCenter.swift in Sources */,
 				FA35169F289BF9F500B2F299 /* ContentView.swift in Sources */,
@@ -626,6 +679,7 @@
 				FA586D1D28AD30EE00F8389F /* MapView.swift in Sources */,
 				FA2F3FB92964698C000F1595 /* UIViewExtension.swift in Sources */,
 				FA243491296EDBCA00EF82EB /* AppDelegate.swift in Sources */,
+				FAA2AE822975894C007B2AD9 /* Hike.swift in Sources */,
 				FA2F3FB229646873000F1595 /* MapLocationSelectionViewController.swift in Sources */,
 				FA007F83295C818E00EB269C /* CommonScreenTitleView.swift in Sources */,
 				FA07C9B82955CF64008D19FA /* View.swift in Sources */,
@@ -638,6 +692,8 @@
 				FA4CBFA0296C016300ADDC3C /* NSideMenu.swift in Sources */,
 				FA07C9B62955CC5E008D19FA /* RectButton.swift in Sources */,
 				FA2F3F7A296438E9000F1595 /* APIClient.swift in Sources */,
+				FAA2AE802975891B007B2AD9 /* HikeView.swift in Sources */,
+				FAF81E5E2977E14A00E58E61 /* SkeltonViewExample.swift in Sources */,
 				FAE1286E2959E284004AA906 /* SecureTextFieldBordered.swift in Sources */,
 				FA4CBFA3296C01BF00ADDC3C /* MenuView.swift in Sources */,
 				FA35169D289BF9F500B2F299 /* SwiftyMeApp.swift in Sources */,
@@ -654,7 +710,9 @@
 				FA07C9B42955C215008D19FA /* Font.swift in Sources */,
 				FA07C9B22955C1E6008D19FA /* CapsuleButton.swift in Sources */,
 				FA2F3F8C29643989000F1595 /* BackgroundTask.swift in Sources */,
+				FAA2AE8429759190007B2AD9 /* View+Animation.swift in Sources */,
 				FA2F3FB629646963000F1595 /* StoryboardInitializable.swift in Sources */,
+				FAA2AE7D2975891B007B2AD9 /* HikeGraph.swift in Sources */,
 				FAE1286C2959D590004AA906 /* TextFieldBordered.swift in Sources */,
 				FA07C9BC2955EBB7008D19FA /* IconButtoswift.swift in Sources */,
 				FA902F4929702E030066DFBB /* ThemeView.swift in Sources */,
@@ -677,7 +735,9 @@
 				FA2F3F79296438E9000F1595 /* APIError.swift in Sources */,
 				FA2F3FB729646963000F1595 /* DequeueInitializable.swift in Sources */,
 				FA586D2428AD38B300F8389F /* ModelData.swift in Sources */,
+				FAA2AE7F2975891B007B2AD9 /* HikeDetail.swift in Sources */,
 				FA902F4A29702E030066DFBB /* ThemePicker.swift in Sources */,
+				FAA2AE7E2975891B007B2AD9 /* GraphCapsule.swift in Sources */,
 				FA902F53297047200066DFBB /* PickersSample.swift in Sources */,
 				FA2F3F8B29643989000F1595 /* AppUtility.swift in Sources */,
 				FA2F3FAF29646715000F1595 /* MapIconView.swift in Sources */,

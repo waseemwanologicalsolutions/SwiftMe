@@ -77,7 +77,7 @@ struct PickersSample: View {
                     .environment(\.locale, Locale(identifier: "en_GB"))
                 }
             }
-            .animation(.easeInOut, value: 300)
+            .animation(.easeInOut, value: showTimePicker)
         }
     }
 }

@@ -63,7 +63,19 @@ struct StartingListOptionsView: View {
                             .font(.system(size: 20))
                             .foregroundColor(Color.blue)
                     }
+                    NavigationLink(destination: AnimateSampleView()){
+                        Text("Animations")
+                    }
+                   
+                    NavigationLink(destination: SkeltonViewExample()) {
+                        Label("SkeltonViewExample", systemImage: "paintpalette")
+                            .font(.system(size: 20))
+                            .foregroundColor(Color.blue)
+                    }
                     
+                }
+                CapsuleButton(title: "Notification Observer test", foreground: Color.red) {
+                    NotificationCenter.default.post(Notification(name:Notification.Name("Test1")))
                 }
             }
             

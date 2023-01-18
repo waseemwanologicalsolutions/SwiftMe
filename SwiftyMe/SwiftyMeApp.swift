@@ -22,6 +22,7 @@ struct SwiftyMeApp: App {
     
     @StateObject var notificationList:NotificationsList = NotificationsList()
     @StateObject var notificationCenter = AppNotificationCenter()
+    @State var showAlert:Bool = false
     
     init(){
         /** Google map and PlacesAPI */
@@ -32,6 +33,18 @@ struct SwiftyMeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .alert("New Card Added!",
+                       isPresented: $showAlert,
+                       actions: {
+                    Button("OK") {
+                        showAlert = false
+                    }
+                }, message: {
+                    Text("NotificationCenter received on app")
+                })
+                .onReceive(NotificationCenter.default.publisher(for: Notification.Name("Test1"))) { notification in
+                    showAlert = true
+                }
                 .environmentObject(textFieldViewModel)
                 .environmentObject(secureTextFieldViewModel)
                 .environmentObject(selectedTabIndex)
