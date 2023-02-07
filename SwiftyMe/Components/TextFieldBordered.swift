@@ -15,6 +15,9 @@ enum Field {
     case signup_email
     case signup_password
     case signup_confirmPassword
+    
+    case search_bus_from_location
+    case search_bus_to_location
 }
 class TextFieldViewModel : ObservableObject {
     @Published var borderColorActive:Color = .gray

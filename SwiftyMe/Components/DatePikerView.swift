@@ -1,5 +1,5 @@
 //
-//  TimePikerView.swift
+//  DatePikerView.swift
 //  SwiftyMe
 //
 //  Created by MacBook on 12/01/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TimePikerView: View {
+struct DatePikerView: View {
     @Binding var date: Date
     let title: String
     let min: Date?
@@ -31,26 +31,24 @@ struct TimePikerView: View {
                 VStack(spacing: 24) {
                     Text(title)
                         .font(.sfProRounded(.body, weight: .bold))
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.bm_black_text)
                     DatePicker(
                         "",
                         selection: $date,
                         displayedComponents: dateComponents
                         
                     )
-                    .datePickerStyle(.wheel)
-                    .foregroundColor(Color.white)
+                    .datePickerStyle(.graphical)
+                    .foregroundColor(Color.bm_black_text)
                     .labelsHidden()
-                    .accentColor(Color.white)
-                    .colorScheme(.dark)
+                    //.colorScheme(.dark)
                 }
                 .padding(.vertical, 20)
                 .frame(maxWidth: .infinity)
-                .background(Color.bm_blue_bg)
+                .background(Color.clear)
                 .cornerRadius(20)
-                
 
-                CapsuleButton(title: "SAVE", foreground: Color.white, background: Color.bm_blue_bg, action: onSave)
+                CapsuleButton(title: "SAVE", foreground: Color.white, background: Color.bm_blue_icon, action: onSave)
                 CapsuleButton(
                     title: "CANCEL",
                     foreground: .white,
@@ -60,21 +58,19 @@ struct TimePikerView: View {
 
             }
             .padding(.horizontal, 8)
-            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        
     }
 }
 
-struct TimePikerView_Previews: PreviewProvider {
+struct DatePikerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimePikerView(
+        DatePikerView(
             date: .constant(Date()),
             title: "Time to Sleep",
             min: Date().addingTimeInterval(6*3600),
             max: Date().addingTimeInterval(24*30*3600),
-            dateComponents: .hourAndMinute,
+            dateComponents: .date,
             onSave: {},
             onClose: {}
         )

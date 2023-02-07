@@ -18,5 +18,8 @@ class SearchRouteViewModel:ObservableObject{
     @Published var showServiceScreen = false
     
     @Published var selectedService:SericeModel?
-    
+    @Published var selectedLocationFrom:LocationRouteModel?
+    @Published var selectedLocationTo:LocationRouteModel?
+    @Published var showSourceDestinationScreen:Bool = false
+    @Published var isSourceLocationSelectting:Bool = true
 }

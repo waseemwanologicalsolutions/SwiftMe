@@ -12,6 +12,13 @@ extension Color{
     
     static let tableBackground = Color(hex: "#151517")
     static let tableTextColor = Color(hex: "#FFFFFF")
+    static let bm_black_text = Color("bm_black_text")
+    static let bm_white_text = Color("bm_white_text")
+    static let bm_blue_bg = Color("bm_blue_bg")
+    static let bm_blue_icon = Color("bm_blue_icon")
+    static let bm_yellow = Color("bm_yellow")
+    static let bm_field_bg = Color("bm_field_bg")
+    static let bm_location_field_inactive = Color("bm_location_field_inactive")
     
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

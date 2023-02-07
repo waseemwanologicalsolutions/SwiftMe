@@ -14,9 +14,17 @@ struct ContentView: View {
     
     
     var body: some View {
+        
+        /*
         VStack{
             StartingListOptionsView()
-        }.uses(alertManager)
+        }.uses(alertManager)*/
+        
+        NavigationStack {
+            Group{
+                SearchRouteView()
+            }.navigationBarHidden()
+        }
         
     }
 }

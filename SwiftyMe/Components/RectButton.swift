@@ -15,6 +15,7 @@ struct RectButton: View {
     var height:CGFloat = 48.0
     var round:CGFloat = 5.0
     var weight:Font.Weight = .medium
+    var icon:Image?
     let action: () -> Void
     var body: some View {
         Button(action: action) {

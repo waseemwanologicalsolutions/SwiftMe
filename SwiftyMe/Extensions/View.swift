@@ -36,3 +36,12 @@ extension View {
         redacted(reason: condition() ? .placeholder : [])
     }
 }
+
+extension View{
+    func navigationBarHidden() -> some View{
+        self
+            .navigationTitle("")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar(.hidden, for: .navigationBar)
+    }
+}

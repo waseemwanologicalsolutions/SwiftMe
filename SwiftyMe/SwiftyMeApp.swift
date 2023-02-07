@@ -24,6 +24,8 @@ struct SwiftyMeApp: App {
     @StateObject var notificationCenter = AppNotificationCenter()
     @State var showAlert:Bool = false
     
+    @StateObject var searchBusVM = SearchRouteViewModel()
+    
     init(){
         /** Google map and PlacesAPI */
         GMSServices.provideAPIKey(GOOGLE_KEY.GOOGLE_MAP_KEY)
@@ -50,6 +52,7 @@ struct SwiftyMeApp: App {
                 .environmentObject(selectedTabIndex)
                 .environmentObject(notificationCenter)
                 .environmentObject(notificationList)
+                .environmentObject(searchBusVM)
                 .onAppear(perform:{
                     print("on appear contentview")
                 })
