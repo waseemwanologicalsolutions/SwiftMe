@@ -207,7 +207,7 @@ struct LocationRouteListRowView:View{
     
     var body: some View{
         ZStack{
-            Color.white
+            Color.bm_white_text
             VStack{
                 Spacer()
                 /*

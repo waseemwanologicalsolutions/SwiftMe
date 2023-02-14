@@ -83,6 +83,11 @@ struct StartingListOptionsView: View {
                         .font(.system(size: 20))
                         .foregroundColor(Color.blue)
                 }
+                NavigationLink(destination: LandmarkList()){
+                    Label("LandmarkList",systemImage: "paintpalette")
+                        .font(.sfProRounded(20))
+                        .foregroundColor(Color.blue)
+                }
             }
             
             

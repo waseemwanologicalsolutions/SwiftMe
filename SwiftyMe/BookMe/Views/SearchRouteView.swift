@@ -58,6 +58,7 @@ struct SearchRouteView: View {
                 dateComponents:vm.dateComponents,
                 onSave: {
                     print(selectedDate)
+                    self.vm.selectedDate = selectedDate
                     self.vm.showDatePicker = false
                 },
                 onClose: {
@@ -74,6 +75,9 @@ struct SearchRouteView: View {
         }
         .navigationDestination(isPresented: $vm.showSourceDestinationScreen) {
             SourceDestinationLocationView(showScreen: $vm.showSourceDestinationScreen)
+        }
+        .navigationDestination(isPresented: $vm.showResultsScreen) {
+            ServicesSearchResultsView()
         }
         
     }
@@ -118,7 +122,7 @@ struct SearchRouteView: View {
                 }
                 RectButton(title: "Search", foreground: Color.white, background: Color.bm_yellow, height: 40, weight: .bold){
                     print("search")
-                    vm.showServiceScreen = true
+                    vm.showResultsScreen = true
                 }
                 .frame(width: 120)
                 

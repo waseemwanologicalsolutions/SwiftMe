@@ -9,12 +9,13 @@ import SwiftUI
 
 struct GridExample: View {
     let data = (1...100).map { "Item \($0)" }
-    /*
+    
      // adapive mean minimum width
-     let columns = [
-     GridItem(.adaptive(minimum: 50))
+     let columnsAdaptive = [
+        GridItem(.adaptive(minimum: 50)),
+        GridItem(.adaptive(minimum: 50))
      ]
-     */
+     
     
     //flexible mean x number of items in one row
     let columns = [
@@ -60,6 +61,17 @@ struct GridExample: View {
             }
             
             Spacer()
+            
+            Text("flexible grid")
+            ScrollView(.vertical) {
+                Grid() {
+                    ForEach(items, id: \.self) { item in
+                        Image(systemName: "\(item).circle.fill")
+                            .font(.largeTitle)
+                    }
+                }
+                .frame(height: 100)
+            }
         }
     }
 }

@@ -19,6 +19,8 @@ extension Color{
     static let bm_yellow = Color("bm_yellow")
     static let bm_field_bg = Color("bm_field_bg")
     static let bm_location_field_inactive = Color("bm_location_field_inactive")
+    static let bm_light_gray = Color("bm_light_gray")
+    static let bm_light_gray_black = Color("bm_light_gray_black")
     
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
