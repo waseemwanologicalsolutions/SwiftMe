@@ -6,11 +6,11 @@
 //
 
 import Foundation
-import Foundation
 import SwiftUI
 
 class BusDetailsViewModel:ObservableObject{
     
+    @Published var showSeatSelection:Bool = false
     @Published var results:[ServicesSearchResultsModel] = []
     
 }

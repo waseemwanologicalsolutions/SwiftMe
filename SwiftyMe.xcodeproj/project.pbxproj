@@ -66,6 +66,8 @@
 		FA4CBFA3296C01BF00ADDC3C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CBFA2296C01BF00ADDC3C /* MenuView.swift */; };
 		FA4CBFA5296C028600ADDC3C /* SomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CBFA4296C028600ADDC3C /* SomeView.swift */; };
 		FA4CBFA7296C069300ADDC3C /* AppGradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CBFA6296C069300ADDC3C /* AppGradientColor.swift */; };
+		FA4E4D3A299E1486000ECDBE /* SeatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E4D39299E1486000ECDBE /* SeatModel.swift */; };
+		FA4E4D3C299E408F000ECDBE /* SelectSeatTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E4D3B299E408F000ECDBE /* SelectSeatTypeView.swift */; };
 		FA55837D297FC56900512491 /* SearchRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55837C297FC56900512491 /* SearchRouteView.swift */; };
 		FA55837F297FC58800512491 /* SearchRouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55837E297FC58800512491 /* SearchRouteViewModel.swift */; };
 		FA558381297FC75600512491 /* BookMeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA558380297FC75600512491 /* BookMeAssets.xcassets */; };
@@ -87,6 +89,9 @@
 		FA902F51297042A60066DFBB /* TimePikerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902F50297042A60066DFBB /* TimePikerView.swift */; };
 		FA902F53297047200066DFBB /* PickersSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902F52297047200066DFBB /* PickersSample.swift */; };
 		FA902F56297057E70066DFBB /* ProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA902F55297057E70066DFBB /* ProgressCircle.swift */; };
+		FAA18D2C299CE949002F1172 /* SeatSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA18D2B299CE949002F1172 /* SeatSelectionView.swift */; };
+		FAA18D2E299CED07002F1172 /* SeatSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA18D2D299CED07002F1172 /* SeatSelectionViewModel.swift */; };
+		FAA18D30299CF838002F1172 /* SeatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA18D2F299CF838002F1172 /* SeatsView.swift */; };
 		FAA22071298112D5000BF1EE /* DatePikerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA22070298112D5000BF1EE /* DatePikerView.swift */; };
 		FAA2207729811BB8000BF1EE /* ServicesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2207629811BB8000BF1EE /* ServicesListView.swift */; };
 		FAA2207929813B45000BF1EE /* SericeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2207829813B45000BF1EE /* SericeModel.swift */; };
@@ -184,6 +189,8 @@
 		FA4CBFA2296C01BF00ADDC3C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FA4CBFA4296C028600ADDC3C /* SomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeView.swift; sourceTree = "<group>"; };
 		FA4CBFA6296C069300ADDC3C /* AppGradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGradientColor.swift; sourceTree = "<group>"; };
+		FA4E4D39299E1486000ECDBE /* SeatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatModel.swift; sourceTree = "<group>"; };
+		FA4E4D3B299E408F000ECDBE /* SelectSeatTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatTypeView.swift; sourceTree = "<group>"; };
 		FA55837C297FC56900512491 /* SearchRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouteView.swift; sourceTree = "<group>"; };
 		FA55837E297FC58800512491 /* SearchRouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouteViewModel.swift; sourceTree = "<group>"; };
 		FA558380297FC75600512491 /* BookMeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BookMeAssets.xcassets; sourceTree = "<group>"; };
@@ -205,6 +212,9 @@
 		FA902F50297042A60066DFBB /* TimePikerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePikerView.swift; sourceTree = "<group>"; };
 		FA902F52297047200066DFBB /* PickersSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickersSample.swift; sourceTree = "<group>"; };
 		FA902F55297057E70066DFBB /* ProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircle.swift; sourceTree = "<group>"; };
+		FAA18D2B299CE949002F1172 /* SeatSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelectionView.swift; sourceTree = "<group>"; };
+		FAA18D2D299CED07002F1172 /* SeatSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelectionViewModel.swift; sourceTree = "<group>"; };
+		FAA18D2F299CF838002F1172 /* SeatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsView.swift; sourceTree = "<group>"; };
 		FAA22070298112D5000BF1EE /* DatePikerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePikerView.swift; sourceTree = "<group>"; };
 		FAA2207629811BB8000BF1EE /* ServicesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesListView.swift; sourceTree = "<group>"; };
 		FAA2207829813B45000BF1EE /* SericeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SericeModel.swift; sourceTree = "<group>"; };
@@ -403,6 +413,7 @@
 				FA348B18298BE65D00528D8B /* SourceDestinationLocationView.swift */,
 				FAC55B41299A65F900B48285 /* Results */,
 				FAFF9B0E299B719400D5422C /* BusDetails */,
+				FAA18D2A299CE90D002F1172 /* Seat Selection */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -415,6 +426,7 @@
 				FA348B16298BE65000528D8B /* SourceDestinationLocationViewModel.swift */,
 				FAC55B3D299A59E100B48285 /* ServicesSearchResultsViewModel.swift */,
 				FAFF9B11299B71D000D5422C /* BusDetailsViewModel.swift */,
+				FAA18D2D299CED07002F1172 /* SeatSelectionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -566,6 +578,16 @@
 			path = "Picker Samples";
 			sourceTree = "<group>";
 		};
+		FAA18D2A299CE90D002F1172 /* Seat Selection */ = {
+			isa = PBXGroup;
+			children = (
+				FAA18D2B299CE949002F1172 /* SeatSelectionView.swift */,
+				FAA18D2F299CF838002F1172 /* SeatsView.swift */,
+				FA4E4D3B299E408F000ECDBE /* SelectSeatTypeView.swift */,
+			);
+			path = "Seat Selection";
+			sourceTree = "<group>";
+		};
 		FAA2207429811B91000BF1EE /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,6 +595,7 @@
 				FA348B14298BE5ED00528D8B /* LocationRouteModel.swift */,
 				FAC55B3F299A5A3F00B48285 /* ServicesSearchResultsModel.swift */,
 				FAFF9B1B299BB45100D5422C /* BusFacilityModel.swift */,
+				FA4E4D39299E1486000ECDBE /* SeatModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -797,6 +820,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA07C9BA2955DDC2008D19FA /* TopNavigationHeader.swift in Sources */,
+				FAA18D2E299CED07002F1172 /* SeatSelectionViewModel.swift in Sources */,
 				FA4CBFA7296C069300ADDC3C /* AppGradientColor.swift in Sources */,
 				FAA22071298112D5000BF1EE /* DatePikerView.swift in Sources */,
 				FA4CBF98296C00FB00ADDC3C /* SlideMenuDemo.swift in Sources */,
@@ -824,6 +848,7 @@
 				FAE1289E2959EEEA004AA906 /* SignupView.swift in Sources */,
 				FA07C9B02955C0E4008D19FA /* Color.swift in Sources */,
 				FAFF9B1E299BC9A600D5422C /* AboutTransporterView.swift in Sources */,
+				FAA18D30299CF838002F1172 /* SeatsView.swift in Sources */,
 				FA2F3FBD29646C1B000F1595 /* MapLocationSelectionViewControllerBridge.swift in Sources */,
 				FA4CBFA0296C016300ADDC3C /* NSideMenu.swift in Sources */,
 				FA07C9B62955CC5E008D19FA /* RectButton.swift in Sources */,
@@ -835,6 +860,7 @@
 				FAE1286E2959E284004AA906 /* SecureTextFieldBordered.swift in Sources */,
 				FA4CBFA3296C01BF00ADDC3C /* MenuView.swift in Sources */,
 				FA348B17298BE65000528D8B /* SourceDestinationLocationViewModel.swift in Sources */,
+				FA4E4D3C299E408F000ECDBE /* SelectSeatTypeView.swift in Sources */,
 				FA35169D289BF9F500B2F299 /* SwiftyMeApp.swift in Sources */,
 				FA2F3F7B296438E9000F1595 /* APIEnums.swift in Sources */,
 				FA2F3F8E29643989000F1595 /* AppConstants.swift in Sources */,
@@ -856,6 +882,7 @@
 				FA07C9B42955C215008D19FA /* Font.swift in Sources */,
 				FA07C9B22955C1E6008D19FA /* CapsuleButton.swift in Sources */,
 				FA2F3F8C29643989000F1595 /* BackgroundTask.swift in Sources */,
+				FA4E4D3A299E1486000ECDBE /* SeatModel.swift in Sources */,
 				FAA2AE8429759190007B2AD9 /* View+Animation.swift in Sources */,
 				FA2F3FB629646963000F1595 /* StoryboardInitializable.swift in Sources */,
 				FAFF9B1C299BB45100D5422C /* BusFacilityModel.swift in Sources */,
@@ -894,6 +921,7 @@
 				FAA2AE7E2975891B007B2AD9 /* GraphCapsule.swift in Sources */,
 				FA902F53297047200066DFBB /* PickersSample.swift in Sources */,
 				FA2F3F8B29643989000F1595 /* AppUtility.swift in Sources */,
+				FAA18D2C299CE949002F1172 /* SeatSelectionView.swift in Sources */,
 				FAC55B3E299A59E100B48285 /* ServicesSearchResultsViewModel.swift in Sources */,
 				FA2F3FAF29646715000F1595 /* MapIconView.swift in Sources */,
 				FAA2207B29814030000BF1EE /* ServicesListViewModel.swift in Sources */,
@@ -1031,6 +1059,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftyMe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Book Seats";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location is used for delivery purpose and selecting location from map and showing your location on map and showing  data neaar to your location.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is fetched to show you on map and find your address and t show nearby contents.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1066,6 +1095,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftyMe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Book Seats";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location is used for delivery purpose and selecting location from map and showing your location on map and showing  data neaar to your location.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is fetched to show you on map and find your address and t show nearby contents.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

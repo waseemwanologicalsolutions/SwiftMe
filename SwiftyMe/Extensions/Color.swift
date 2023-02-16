@@ -21,6 +21,10 @@ extension Color{
     static let bm_location_field_inactive = Color("bm_location_field_inactive")
     static let bm_light_gray = Color("bm_light_gray")
     static let bm_light_gray_black = Color("bm_light_gray_black")
+    static let bm_seats_bg = Color("bm_seats_bg")
+    static let bm_dark_blue = Color("bm_dark_blue")
+    static let bm_orange = Color("bm_orange")
+    static let bm_pink = Color("bm_pink")
     
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

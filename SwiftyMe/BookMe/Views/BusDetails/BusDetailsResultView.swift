@@ -21,6 +21,7 @@ struct BusDetailsResultView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 60, height: 70)
                             .padding([.top, .bottom], 5)
+                            .padding([.trailing], 5)
                         
                         VStack{
                             HStack{
@@ -48,25 +49,25 @@ struct BusDetailsResultView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(Color.bm_blue_icon)
-                                    .frame(width: 20, height: 20)
+                                    .frame(width: 18, height: 18)
                                 
                                 Image(systemName: "headphones")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(Color.bm_blue_icon)
-                                    .frame(width: 20, height: 20)
+                                    .frame(width: 18, height: 18)
                                 
                                 Image(systemName: "snowflake")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(Color.bm_blue_icon)
-                                    .frame(width: 20, height: 20)
+                                    .frame(width: 18, height: 18)
                                 
                                 Image(systemName: "tv")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(Color.bm_blue_icon)
-                                    .frame(width: 20, height: 20)
+                                    .frame(width: 18, height: 18)
                                 
                                 Spacer()
                                 
@@ -93,7 +94,8 @@ struct BusDetailsResultView: View {
                                     .foregroundColor(Color.bm_black_text)
                                     .font(.sfProRounded(.subheadline, weight: .bold))
                             }
-                            .padding([.trailing], 15)
+                            .padding([.trailing], 10)
+                            
                             VStack{
                                 BorderedCircle(borderColor: Color.bm_black_text, radius: 7)
                                     .padding([.top], 3)
@@ -178,13 +180,14 @@ struct BusDetailsResultView: View {
                                     .cornerRadius(15)
                                 
                             }
-                            .padding([.trailing], 15)
+                            .padding([.trailing], 10)
                             
                         }
                     }
                     .frame(maxWidth: .infinity)
                     .frame(height:120)
-                    .padding()
+                    .padding([.leading, .trailing], 0)
+                    .padding([.top, .bottom], 15)
                     
                     
                 }

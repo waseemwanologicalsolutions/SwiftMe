@@ -9,12 +9,13 @@ import SwiftUI
 
 struct TextFieldClearButton: View {
     
+    var color:Color = .secondary
     let action: () -> Void
     
     var body: some View {
         Button(action:action) {
             Image(systemName: "multiply.circle.fill")
-                .foregroundColor(.secondary)
+                .foregroundColor(color)
         }
     }
 }

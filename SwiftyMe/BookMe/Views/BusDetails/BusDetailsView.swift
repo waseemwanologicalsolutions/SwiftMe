@@ -35,12 +35,16 @@ struct BusDetailsView: View {
             
             ConfirmButton.onTapGesture {
                 print("confirm tapped")
+                vm.showSeatSelection = true
             }
         }
         .edgesIgnoringSafeArea(.bottom)
         .navigationBarHidden()
         .onAppear{
             
+        }
+        .navigationDestination(isPresented:$vm.showSeatSelection){
+            SeatSelectionView(result:result)
         }
     }
     
@@ -67,46 +71,51 @@ struct BusDetailsView: View {
         
         VStack(spacing: 10){
             HStack(alignment: .center){
-                Button(action:{
-                    self.mode.wrappedValue.dismiss()
-                }){
-                    Image(systemName: "chevron.left")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color.white)
-                        .frame(width: 26, height: 26)
-                }
-                .frame(width: 40, height: 40)
                 
-                HStack(){
-                   
-                    VStack(alignment:.leading, spacing:5){
+                HStack(alignment: .center){
+                    
+                    Button(action:{
+                        self.mode.wrappedValue.dismiss()
+                    }){
                         HStack{
-                            Text("Bus Details")
+                            Image(systemName: "chevron.left")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
                                 .foregroundColor(Color.white)
-                                .font(.sfProRounded(.headline))
-                                .padding([.leading], 0)
-                                .padding([.trailing], 0)
+                                .frame(width: 26, height: 26)
+                            
+                            VStack(alignment:.leading, spacing:5){
+                                HStack{
+                                    Text("Bus Details")
+                                        .foregroundColor(Color.white)
+                                        .font(.sfProRounded(.headline))
+                                        .padding([.leading], 0)
+                                        .padding([.trailing], 0)
+                                        
+                                    Spacer()
+                                }
                                 
-                            Spacer()
-                        }
-                        
-                        HStack{
-                            Text(searchRouteViewModel.selectedDate.getCustomFormatDateString(format: "dd MMM") + " | " + (searchRouteViewModel.selectedService?.name ?? " All services"))
-                                .foregroundColor(Color.white)
-                                .font(.subheadline)
-                                .multilineTextAlignment(.leading)
-                                .padding([.leading], 0)
-                                .padding([.trailing], 0)
+                                HStack{
+                                    Text(searchRouteViewModel.selectedDate.getCustomFormatDateString(format: "dd MMM") + " | " + (searchRouteViewModel.selectedService?.name ?? " All services"))
+                                        .foregroundColor(Color.white)
+                                        .font(.subheadline)
+                                        .multilineTextAlignment(.leading)
+                                        .padding([.leading], 0)
+                                        .padding([.trailing], 0)
+                                    
+                                    Spacer()
+                                }
+                            }
+                            .padding([.top, .bottom], 10)
                             
                             Spacer()
                         }
                     }
-                    .padding([.top, .bottom], 10)
-                    
+                    .frame(height: 40)
                     
                 }
-                .frame(maxWidth: .infinity)
+                .padding([.leading, .trailing], 0)
+                
                 
             }
             .padding([.leading, .trailing], 10)

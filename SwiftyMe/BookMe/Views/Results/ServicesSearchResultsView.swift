@@ -48,11 +48,14 @@ struct ServicesSearchResultsView: View {
                 Button(action:{
                     self.mode.wrappedValue.dismiss()
                 }){
-                    Image(systemName: "chevron.left")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color.white)
-                        .frame(width: 26, height: 26)
+                    HStack{
+                        Image(systemName: "chevron.left")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(Color.white)
+                            .frame(width: 26, height: 26)
+                        Spacer()
+                    }
                 }
                 .frame(width: 40, height: 40)
                 
@@ -72,6 +75,7 @@ struct ServicesSearchResultsView: View {
                         HStack{
                             Text(searchRouteViewModel.selectedDate.getCustomFormatDateString(format: "dd MMM") + " | " + (searchRouteViewModel.selectedService?.name ?? "All services"))
                                 .foregroundColor(Color.bm_black_text)
+                                .font(.sfProRounded(11))
                                 .multilineTextAlignment(.leading)
                                 .padding([.leading], 10)
                                 .padding([.trailing], 10)

@@ -38,13 +38,15 @@ struct AboutTransporterView: View {
                             .padding([.leading], 0)
                         Spacer()
                     }
-                    .padding([.top], 2)
-                    .padding([.bottom], 1)
+                    .padding([.top], 1)
+                    .padding([.bottom], 5)
                     HStack(spacing:5){
                         GridIemAbout(icon: "clock.badge.exclamationmark", title: "Late Deparature", value: "0%")
                         GridIemAbout(icon: "person.fill.questionmark", title: "Staff", value: "Good")
                         GridIemAbout(icon: "hand.thumbsup", title: "Recommendation", value: "100%")
-                    }.padding([.bottom, .leading, .trailing], 15)
+                    }
+                    .padding([.bottom, .leading, .trailing], 15)
+                    .frame(height: 60)
                    
                 }
                 .frame(maxWidth: .infinity)

@@ -18,7 +18,9 @@ struct ResultsListRowView: View {
                         
                         Image(item.logo ?? "")
                             .resizable()
-                            .frame(width: 70, height: 70)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 60, height: 70)
+                            .padding([.trailing], 5)
                         
                         VStack{
                             HStack{
@@ -46,25 +48,25 @@ struct ResultsListRowView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(Color.bm_blue_icon)
-                                    .frame(width: 20, height: 20)
+                                    .frame(width: 18, height: 18)
                                 
                                 Image(systemName: "headphones")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(Color.bm_blue_icon)
-                                    .frame(width: 20, height: 20)
+                                    .frame(width: 18, height: 18)
                                 
                                 Image(systemName: "snowflake")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(Color.bm_blue_icon)
-                                    .frame(width: 20, height: 20)
+                                    .frame(width: 18, height: 18)
                                 
                                 Image(systemName: "tv")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(Color.bm_blue_icon)
-                                    .frame(width: 20, height: 20)
+                                    .frame(width: 18, height: 18)
                                 
                                 Spacer()
                                 
