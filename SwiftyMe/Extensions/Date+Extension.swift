@@ -6,7 +6,6 @@
 import Foundation
 extension Date{
     
-    
     func getBargainListFormat() -> String{
         
         let dateFormatter = DateFormatter()

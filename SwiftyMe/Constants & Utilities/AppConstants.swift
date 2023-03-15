@@ -35,7 +35,7 @@ let WEATHERKIT_JWTOKEN = "eyJhbGciOiJFUzI1NiIsImtpZCI6IkxQQjRGUDc3TFQiLCJpZCI6Ij
 
 struct APP_URL {
     
-    static let BASE_URL : String = "https://sandbox-api.tripscon.com/"
+    static let BASE_URL : String = "https://staging-api.tripscon.com/"
     static let API : String = BASE_URL
     static let IMAGE_URL: String = BASE_URL + "assets/uploads/"
    

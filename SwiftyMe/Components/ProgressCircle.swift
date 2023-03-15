@@ -13,7 +13,7 @@ struct ProgressCircle<Background: ShapeStyle, Forground: ShapeStyle>: View {
     let background: Background
     let forground: Forground
     
-    private let size: CGFloat = 0.75
+    private let size: CGFloat = 1.0
     var body: some View {
         ZStack{
             circleShape
@@ -26,7 +26,7 @@ struct ProgressCircle<Background: ShapeStyle, Forground: ShapeStyle>: View {
         }
         .aspectRatio(1, contentMode: .fit)
         .padding(strockWidth / 2) // Move center border to inner border
-        .rotationEffect(Angle(degrees: 135))
+        .rotationEffect(Angle(degrees: -90))
     }
     
     var stroke: StrokeStyle{

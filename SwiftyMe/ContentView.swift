@@ -20,12 +20,13 @@ struct ContentView: View {
             StartingListOptionsView()
         }.uses(alertManager)*/
         
+        /*
         NavigationStack {
             Group{
                 SearchRouteView()
             }.navigationBarHidden()
-        }
-        
+        }*/
+        APITestView()
     }
 }
 

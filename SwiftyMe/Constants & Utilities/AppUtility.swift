@@ -247,6 +247,16 @@ class AppUtility: NSObject{
         
         return try? JSONSerialization.data(withJSONObject:result)
     }
+    class func encodeTo<T:Encodable>(_ objectType:T)->Data?{
+        do {
+            let obj = try JSONEncoder().encode(objectType)
+            return obj
+        }catch let error as NSError{
+            print("Failed in model calss: \(error.localizedDescription)")
+            print(error)
+            return nil
+        }
+    }
     class func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
       return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
     }

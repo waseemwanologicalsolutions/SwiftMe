@@ -410,19 +410,3 @@ class APIClient {
     }
 }
 
-extension NSMutableData {
-  func appendString(_ string: String) {
-    if let data = string.data(using: .utf8) {
-      self.append(data)
-    }
-  }
-}
-
-extension URLResponse {
-    func getStatusCode() -> Int? {
-        if let httpResponse = self as? HTTPURLResponse {
-            return httpResponse.statusCode
-        }
-        return nil
-    }
-}
