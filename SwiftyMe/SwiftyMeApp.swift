@@ -17,6 +17,7 @@ struct SwiftyMeApp: App {
     @StateObject var textFieldViewModel:TextFieldViewModel = TextFieldViewModel()
     @StateObject var secureTextFieldViewModel:SecureTextFieldViewModel = SecureTextFieldViewModel()
     @StateObject var selectedTabIndex:SelectedTabViewModel = SelectedTabViewModel()
+    @StateObject var stateManager = StateManager()
     
     @UIApplicationDelegateAdaptor var appDelegate: AppDelegate
     
@@ -53,8 +54,10 @@ struct SwiftyMeApp: App {
                 .environmentObject(notificationCenter)
                 .environmentObject(notificationList)
                 .environmentObject(searchBusVM)
+                .environmentObject(stateManager)
                 .onAppear(perform:{
                     print("on appear contentview")
+                    stateManager.data = ReelsDashboardSceneViewModelData.initDataList()
                 })
         }
         

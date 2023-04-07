@@ -26,6 +26,11 @@ extension Color{
     static let bm_orange = Color("bm_orange")
     static let bm_pink = Color("bm_pink")
     
+    static let reel_black_text = Color("reel_black_text")
+    static let reel_white_text = Color("reel_white_text")
+    static let reel_light_gray = Color("reel_light_gray")
+    static let reel_blue = Color("reel_blue")
+    
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int: UInt64 = 0

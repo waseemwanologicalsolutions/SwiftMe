@@ -29,7 +29,7 @@ struct ServicesSearchResultsView: View {
                 
             }.listStyle(.plain)
             
-            
+
             
         }
         .navigationBarHidden()

@@ -26,7 +26,14 @@ struct ContentView: View {
                 SearchRouteView()
             }.navigationBarHidden()
         }*/
-        APITestView()
+        /*
+        NavigationStack{
+            ReelsDashboardSceneView( tabSelection: .constant(.feed))
+        }*/
+        ZStack{
+            CustomTabBarView()
+        }
+        //APITestView()
     }
 }
 

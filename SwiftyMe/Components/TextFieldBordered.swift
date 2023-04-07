@@ -18,7 +18,13 @@ enum Field {
     
     case search_bus_from_location
     case search_bus_to_location
+    
+    case contest_form_name
+    case contest_form_phone
+    case contest_form_caption
+    case contest_form_location
 }
+
 class TextFieldViewModel : ObservableObject {
     @Published var borderColorActive:Color = .gray
     @Published var focusedField: Field?

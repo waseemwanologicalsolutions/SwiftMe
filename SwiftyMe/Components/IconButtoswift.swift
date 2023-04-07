@@ -18,6 +18,7 @@ struct IconButton: View {
     var image:Image = Image("leftArrow")
     var iconTintColor:Color = .black
     var iconAlignment:TextAlignment = .center
+    var iconPadding:CGFloat = 0
     let action: () -> Void
     var body: some View {
         Button(action: action) {
@@ -31,18 +32,27 @@ struct IconButton: View {
                 if iconAlignment == .leading{
                     HStack {
                         image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
                             .tint(iconTintColor)
+                            .padding([.leading],iconPadding)
                         Spacer()
                     }
                 }else if iconAlignment == .trailing{
                     HStack {
                         Spacer()
                         image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
                             .tint(iconTintColor)
+                            .padding([.trailing],iconPadding)
                     }
                 }else{
                     image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
                         .tint(iconTintColor)
+                        .padding(iconPadding)
                 }
             }
             .frame(height: height)
